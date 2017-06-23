@@ -9,7 +9,7 @@ exports.recursionAnswers = {
   	} else {
   		let dir = !dirName || dirName === data["dir"] ? undefined : dirName
   		let arr = [], files = data["files"]
-  		for (var i in files) {
+  		for (let i in files) {
   			arr = arr.concat(recursionAnswers.listFiles(files[i],dir))
   		}
   		return arr
